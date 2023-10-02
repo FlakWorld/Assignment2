@@ -156,12 +156,16 @@ footer{
 }
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Create a 3-column grid */
-    gap: 20px; /* Adjust the gap between grid items */
+    grid-template-rows: repeat(2, 0fr); /* Create a 3-column grid */
+    gap: 10px; /* Adjust the gap between grid items */
   }
   
   .grid-item {
-    padding: 20px;
+    padding: 0px;
     text-align: center;
   }
-  
+  .content-container {
+    min-height: 100vh; /* Минимальная высота контейнера, чтобы уместить все на экране */
+    display: flex;
+    flex-direction: column;
+}
