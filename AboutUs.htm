@@ -6,7 +6,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Book Store</title>
+        <title>About Us</title>
         <link rel="icon" href="image/backgimg.png" type="image/x-icon">
         <!--Google Fonts-->
         <link
@@ -31,23 +31,29 @@
 <body>
     <header>
         <div class="logo">
-            <a href="">The Book Bazaar</a>
+          <a href="">The Book Bazaar</a>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.htm">Home</a></li>
-                <li><a href="Books.htm">Arrivals</a></li>
-                <li><a href="AboutUs.htm">About Us</a></li>
-                <li><a href="">Contact</a> </li>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-#333">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link" href="index.htm"><i class="fa-solid fa-house"></i>Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="Books.htm"><i class="fa-solid fa-book"></i>Arrivals</a></li>
+              <li class="nav-item"><a class="nav-link" href="AboutUs.htm"><i class="fa-solid fa-user"></i>About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact"><i class="fa-solid fa-headset"></i>Contact</a></li>
             </ul>
+          </div>
         </nav>
         <div class="search">
-            <input type="text" placeholder="Search...">
-            <button type="submit">Go</button>
+          <input type="text" placeholder="Search...">
+          <button type="submit">Go</button>
         </div>
-    </header>
+      </header>
 
-    <section id="about">
+    <section id="about" class="container">
         <h2>Welcome The Book Bazaar!</h2>
         <p>
             Welcome to The Book Bazaar, where our passion for books knows no bounds! We're more than just a bookstore;
@@ -82,7 +88,7 @@
         </p>
     </section>
 
-    <section id="story">
+    <section id="story" class="container">
         <h2>Our Story</h2>
         <p>
             Founded in 2023, The Book Bazaar embarked on its journey as a humble, independent bookstore with a dream to
@@ -119,8 +125,8 @@
 
     <!-- Add more sections as needed for "What Sets Us Apart," "Our Commitment," and "Visit Us Today." -->
 
-    <footer>
-        <p>&copy; 2023 Your Bookstore Name | All rights reserved</p>
+    <footer class="footer">
+        <p>&copy; 2023 The Book Bazaar. All rights reserved</p>
     </footer>
 </body>
 

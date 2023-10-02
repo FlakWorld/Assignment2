@@ -7,8 +7,8 @@
   <title>Book Store</title>
   <link rel="icon" href="image/backgimg.png" type="image/x-icon">
   <!--Google Fonts-->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&family=Ubuntu:wght@500&display=swap" 
-  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&family=Ubuntu:wght@500&display=swap"
+    rel="stylesheet">
   <!-- Stylesheets -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -36,10 +36,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="index.htm"><i class="fa-solid fa-house"></i>Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="Books.htm">Arrivals</a></li>
-          <li class="nav-item"><a class="nav-link" href="AboutUs.htm">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.htm"><i class="fa-solid fa-house"></i>Home</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="Books.htm"><i class="fa-solid fa-book"></i>Arrivals</a></li>
+          <li class="nav-item"><a class="nav-link" href="AboutUs.htm"><i class="fa-solid fa-user"></i>About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact"><i class="fa-solid fa-headset"></i>Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -53,29 +54,58 @@
       <h1>Welcome to The Book Bazaar</h1>
       <p><strong>Let's find a book you like!</strong></p>
     </div>
+
+
     <div class="main-content">
-      <h2>Bestseller Books</h2>
-      <div class="book-container">
-        <div class="book">
-          <img src="image/1book.jpg">
-          <h3>Atomic Habits</h3>
-          <hr>
-          <p><em>James Clear</em></p>
-          <p>5000 ₸</p>
-        </div>
-        <div class="book">
-          <img src="image/2book.jpg">
-          <h3>Clean Code</h3>
-          <hr>
-          <p><em>Robert Martin</em></p>
-          <p>4000 ₸</p>
-        </div>
-        <div class="book">
-          <img src="image/3book.jpg">
-          <h3>Game of Thrones</h3>
-          <hr>
-          <p><em>George Martin</em></p>
-          <p>5500 ₸</p>
+      <div class="container">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-flex flex-column justify-content-center align-items-center">
+                <img src="image/1book.jpg" class="d-block w-100 carouselImg" alt="...">
+                <div class="book">
+                  <h3>Atomic Habits</h3>
+                  <hr>
+                  <p><em>James Clear</em></p>
+                  <p>5000 ₸</p>
+                </div>
+              </div>
+
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex flex-column justify-content-center align-items-center">
+                <img src="image/2book.jpg" class="d-block w-100 carouselImg" alt="...">
+                <div class="book">
+                  <h3>Game of Thrones</h3>
+                  <hr>
+                  <p><em>George Martin</em></p>
+                  <p>5500 ₸</p>
+                </div>
+              </div>
+
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex flex-column justify-content-center align-items-center">
+                <img src="image/3book.jpg" class="d-block w-100 carouselImg" alt="...">
+                <div class="book">
+
+                  <h3>Game of Thrones</h3>
+                  <hr>
+                  <p><em>George Martin</em></p>
+                  <p>5500 ₸</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <button class="carousel-control-prev btnCarousel" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next btnCarousel" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
       <div class="genres">
@@ -97,7 +127,13 @@
           </ul>
         </div>
       </div>
-      <a href="" class="btn">View all books</a>
+      <button type="button" class="btn btn-secondary position-relative">
+        View All Books!
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">
+          99+
+          <span class="visually-hidden">Da</span>
+        </span>
+      </button>
     </div>
     <br>
     <div class="Supportsystem" id="contact">
@@ -109,15 +145,35 @@
         <input type="text" id="lname" name="lname"><br>
         <label for="email">Email</label><br>
         <input type="text" id="email" name="email"><br>
-        <button type="submit">Contact us</button>
+        <div id="liveAlertPlaceholder"></div>
+<button type="button" class="btn btn-primary" id="liveAlertBtn">Contact Us</button>
       </form>
     </div>
-
   </div>
   <footer>
     <p>&copy; 2023 The Book Bazaar. All rights reserved</p>
   </footer>
 
 </body>
+<script>
+  const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+const appendAlert = (message, type) => {
+  const wrapper = document.createElement('div')
+  wrapper.innerHTML = [
+    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+    `   <div>${message}</div>`,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+  ].join('')
 
+  alertPlaceholder.append(wrapper)
+}
+
+const alertTrigger = document.getElementById('liveAlertBtn')
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', () => {
+    appendAlert('Your contact information has been sent!', 'success')
+  })
+}
+</script>
 </html>

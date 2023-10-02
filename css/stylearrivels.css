@@ -75,6 +75,10 @@ nav ul li a:hover{
 .navbar-nav .nav-item .nav-link {
     color:white;
 }
+.list-group-item {
+    background-color: darkslateblue;
+    color: white;
+}
 .arrivals{
     width: 100%;
     height: 100vh;
