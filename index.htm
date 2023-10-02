@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Store</title>
+  <link rel="icon" href="image/backgimg.png" type="image/x-icon">
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&family=Ubuntu:wght@500&display=swap" 
+  rel="stylesheet">
+  <!-- Stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <!-- Bootstrap Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/597061bca4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="">The Book Bazaar</a>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-#333">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="index.htm"><i class="fa-solid fa-house"></i>Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="Books.htm">Arrivals</a></li>
+          <li class="nav-item"><a class="nav-link" href="AboutUs.htm">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="search">
+      <input type="text" placeholder="Search...">
+      <button type="submit">Go</button>
+    </div>
+  </header>
+  <div class="hero">
+    <div class="hero-content">
+      <h1>Welcome to The Book Bazaar</h1>
+      <p><strong>Let's find a book you like!</strong></p>
+    </div>
+    <div class="main-content">
+      <h2>Bestseller Books</h2>
+      <div class="book-container">
+        <div class="book">
+          <img src="image/1book.jpg">
+          <h3>Atomic Habits</h3>
+          <hr>
+          <p><em>James Clear</em></p>
+          <p>5000 ₸</p>
+        </div>
+        <div class="book">
+          <img src="image/2book.jpg">
+          <h3>Clean Code</h3>
+          <hr>
+          <p><em>Robert Martin</em></p>
+          <p>4000 ₸</p>
+        </div>
+        <div class="book">
+          <img src="image/3book.jpg">
+          <h3>Game of Thrones</h3>
+          <hr>
+          <p><em>George Martin</em></p>
+          <p>5500 ₸</p>
+        </div>
+      </div>
+      <div class="genres">
+        <div class="btn-group">
+          <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <h2>Browse by Genre</h2>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Romance</a></li>
+            <li><a class="dropdown-item" href="#">Fantasy</a></li>
+            <li><a class="dropdown-item" href="#">Thriller</a></li>
+            <li><a class="dropdown-item" href="#">Biography</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">More Genres</a></li>
+            <!-- Add more genres here -->
+          </ul>
+        </div>
+      </div>
+      <a href="" class="btn">View all books</a>
+    </div>
+    <br>
+    <div class="Supportsystem" id="contact">
+      <h4>Support system</h4><br>
+      <form>
+        <label for="fname">First Name</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last Name</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="email">Email</label><br>
+        <input type="text" id="email" name="email"><br>
+        <button type="submit">Contact us</button>
+      </form>
+    </div>
+
+  </div>
+  <footer>
+    <p>&copy; 2023 The Book Bazaar. All rights reserved</p>
+  </footer>
+
+</body>
+
+</html>
