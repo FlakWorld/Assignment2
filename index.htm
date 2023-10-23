@@ -55,6 +55,23 @@
       <p><strong>Let's find a book you like!</strong></p>
     </div>
 
+    <div id="countdown-container">
+      <p><strong>Have time to buy books in 1-5 minutes and get a 20% discount</strong></p>
+      <div id="duration-input">
+        <label for="duration">Set the duration (in minutes):</label>
+        <input type="number" id="duration" min="1" value="60">
+      </div>
+      <button id="start-button">Start the countdown</button>
+      <div id="countdown"></div>
+      <div id="message"></div>
+      <button id="stop-button" class="btn btn-secondary position-relative">
+        Are you done already?)
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">
+          20%
+          <span class="visually-hidden">Скидка</span>
+        </span>
+      </button>
+    </div>
 
     <div class="main-content">
       <div class="container">
@@ -155,7 +172,7 @@
   </footer>
 
 </body>
-
+<script type="text/javascript" src="js/AnimatedCountdownTimer.js"></script>
 <script>
   const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
 const appendAlert = (message, type) => {
