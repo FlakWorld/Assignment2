@@ -199,3 +199,69 @@ color: #fff;
 #liveAlertPlaceholder {
     margin: 20px 0;
   }
+
+  /* Animated Countdown Timer*/
+#countdown-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#countdown {
+    font-size: 36px;
+    color: #f5f0f0;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+#duration-input label,
+#message {
+    font-size: 24px;
+    color: #fff;
+}
+
+#duration-input {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+#duration-input label {
+    margin-bottom: 10px;
+}
+
+#start-button {
+    background-color: #333;
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.4s ease;
+}
+
+#start-button:hover {
+    background-color: #555;
+}
+
+
+#message {
+    font-weight: bold;
+    margin-top: 20px;
+    color: #f7f2f2;
+}
+
+#stop-button {
+    background-color: #333;
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.4s ease;
+}
+
+#stop-button:hover {
+    background-color: #555;
+}
