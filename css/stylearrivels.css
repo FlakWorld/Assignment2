@@ -175,31 +175,31 @@ footer{
 }
 
   #todoList h1{
-      color: darkslateblue;
+    color: white;
       margin-bottom: 0;
   }
 
   #todoList{
-      background-color: white;
+    background-color: #333;
       font-size: 1.5rem;
       margin-top: 1rem;
-      color: darkslateblue;
+      color: white;
   }
 
 #completedBooks{
-    background-color: white;
+    background-color: #333;
     font-size: 1.5rem;
     margin-top: 1rem;
-    color: darkslateblue;
+    color: white;
 }
 
 #completedBooks h1{
-    color: darkslateblue;
+    color: white;
     margin: 0;
 }
 
 #completedBooks h3{
-    color: green;
+    color: white;
 }
 
 
@@ -214,5 +214,25 @@ footer{
     width: 20%;
 }
 
+/* Accardion */
+.accordion {
+    width: 90%;
+    margin: 0 auto;
+}
 
+.accordion-item {
+    border: 1px solid darkslateblue;
+    margin: 5px 0;
+}
 
+.accordion-title {
+    background-color: #f0f0f0;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+}
