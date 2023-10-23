@@ -23,6 +23,7 @@
         crossorigin="anonymous"></script>
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/597061bca4.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -245,6 +246,17 @@
                 </div>
             </div>
         </div>
+        <div class="container" id="todoList">
+            <h1>To read list</h1>
+            <input type="text" class="form-control" id="newBook">
+            <button type="button" class="btn btn-primary"  onclick="addNewBook()">Add</button>
+            <button type="button" class="btn btn-success" id="updateBtn" onclick="updateCompletedBooks()">Complete</button>
+            <button type="button" class="btn btn-danger" id="deleteBtn" onclick="deleteBook()">Delete</button>
+        </div>
+        <div class="container" id="completedBooks">
+            <h1>Completed</h1>
+
+        </div>
         <footer>
             <p>&copy; 2023 The Book Bazaar. All rights reserved</p>
         </footer>
@@ -252,5 +264,6 @@
     </div>
 </div>
 </div>
+    <script src="js/todo.js"></script>
 </body>
 </html>

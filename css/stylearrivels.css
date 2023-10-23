@@ -173,3 +173,46 @@ footer{
     display: flex;
     flex-direction: column;
 }
+
+  #todoList h1{
+      color: darkslateblue;
+      margin-bottom: 0;
+  }
+
+  #todoList{
+      background-color: white;
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      color: darkslateblue;
+  }
+
+#completedBooks{
+    background-color: white;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: darkslateblue;
+}
+
+#completedBooks h1{
+    color: darkslateblue;
+    margin: 0;
+}
+
+#completedBooks h3{
+    color: green;
+}
+
+
+
+.form-control{
+    width: 20%;
+    margin: 0 auto;
+    display: block;
+}
+
+.btn{
+    width: 20%;
+}
+
+
+
