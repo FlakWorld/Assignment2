@@ -93,12 +93,13 @@ nav ul li a:hover{
     font-family: "Arial", sans-serif;
 }
 
-.arrivals .arrivals_box{
+.arrivals_box{
     width: 95%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 25px 0;
+    justify-items: center;
 }
 
 .arrivals .arrivals_box .arrivals_card{
@@ -172,6 +173,30 @@ footer{
     min-height: 100vh; /* Минимальная высота контейнера, чтобы уместить все на экране */
     display: flex;
     flex-direction: column;
+}
+
+@media screen and (max-width: 1493px) {
+    .arrivals_box{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1248px) {
+    .arrivals_box{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 914px) {
+    .arrivals_box{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 615px) {
+    .arrivals_box{
+        grid-template-columns: 1fr;
+    }
 }
 
   #todoList h1{

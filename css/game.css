@@ -1,3 +1,44 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
 body{
     background-color: darkslateblue;
+}
+
+#statements{
+    min-height: 50vh;
+}
+
+.statement:hover{
+    border-style: dotted !important;
+    cursor: pointer;
+}
+
+#trueZone{
+    min-height: 50vh;
+}
+
+#trueZone .statement{
+    width: 90% !important;
+}
+
+#falseZone{
+    min-height: 50vh;
+}
+
+h4{
+    color: white;
+    font-weight: bold;
+}
+
+.fa-refresh{
+    color:yellow;
+}
+
+.fa-refresh:hover{
+    cursor: pointer;
 }

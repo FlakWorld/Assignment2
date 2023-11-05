@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Book Store</title>
+  <title>Quiz</title>
   <link rel="icon" href="image/backgimg.png" type="image/x-icon">
   <!--Google Fonts-->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&family=Ubuntu:wght@500&display=swap"
@@ -21,8 +21,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
     crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.0/dist/confetti.browser.min.js"></script>
   <!-- Fontawesome -->
   <script src="https://kit.fontawesome.com/597061bca4.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header>
@@ -40,7 +42,6 @@
               </li>
               <li class="nav-item"><a class="nav-link" href="Books.htm"><i class="fa-solid fa-book"></i>Arrivals</a></li>
               <li class="nav-item"><a class="nav-link" href="AboutUs.htm"><i class="fa-solid fa-user"></i>About Us</a></li>
-              <li class="nav-item"><a class="nav-link" href="#contact"><i class="fa-solid fa-headset"></i>Contact</a></li>
             </ul>
           </div>
         </nav>
@@ -49,22 +50,27 @@
           <button type="submit">Go</button>
         </div>
       </header>
-      <div class="container" id="gameZone">
-        <div class="d-flex flex-column align-items-center mt-4 bg-primary" id="statements">
-          <div class="d-flex justify-content-center my-4 statement bg-light w-50 py-3" draggable="true" id="s1">Statement1</div>
-          <div class="d-flex justify-content-center my-4 statement bg-light w-50 py-3" draggable="true" id="s2">Statement2</div>
-          <div class="d-flex justify-content-center my-4 statement bg-light w-50 py-3" draggable="true" id="s3">Statement3</div>
+      <div class="container my-4" id="gameZone">
+        <div class="container border border-3" id="statementsZome">
+          <div class="d-flex flex-column align-items-center">
+            <h4 class="my-2">STATEMENTS <i class="fa fa-refresh" id="reload" aria-hidden="true"></i></h4>
+          </div>
+           <div class="d-flex flex-column align-items-center" id="statements"></div>
         </div>
-        <div class="d-flex justify-content-center mt-4 bg-primary" id="answers">
-          <div class="row container-fluid">
-            <div class="col">
-              <h3>True</h3>
-              <div class="p-3 border bg-light text-center" id="trueZone"></div>
+       
+        <div class="d-flex flex-column justify-content-center mt-4" id="answers">
+          <div class="row container-fluid text-center">
+            <div class="col ">
+              <h4 class="mt-2">TRUE</h4>
+              <div class="d-flex flex-column align-items-center border bg-light" id="trueZone"></div>
             </div>
             <div class="col">
-              <h3>False</h3>
-              <div class="p-3 border bg-light text-center" id="falseZone"></div>
+              <h4 class="mt-2">FALSE</h4>
+              <div class="d-flex flex-column align-items-center border bg-light" id="falseZone"></div>
             </div>
+          </div>
+          <div class="d-flex justify-content-center my-3">
+            <button type="button" class="btn btn-success" id="checkBtn">Check</button>
           </div>
         </div>
       </div>
