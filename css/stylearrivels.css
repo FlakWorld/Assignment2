@@ -51,17 +51,11 @@ nav ul li a{
 nav ul li a:hover{
     color:#666;
 }
-.search{
+.search {
     position: relative;
 }
-.search input{
-    padding: 10px;
-    border: none;
-    border-radius: 20px;
-    background-color: #444;
-    color: #fff;
-}
-.search button{
+
+#search-button {
     position: absolute;
     top: 0;
     right: 0;
@@ -69,9 +63,28 @@ nav ul li a:hover{
     border: none;
     border-radius: 20px;
     background-color: #fff;
-    color:#444;
+    color: #444;
     font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
 }
+
+#search-button.shattered {
+    background-color: transparent;
+    color: transparent;
+    border: 1px solid #ffffff;
+    overflow: hidden;
+}
+
+.search input{
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #444;
+    color: #fff;
+}
+
 .navbar-nav .nav-item .nav-link {
     color:white;
 }
