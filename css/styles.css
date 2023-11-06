@@ -1,10 +1,11 @@
-*{
-    margin:0px;
-    padding:0px;
+* {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     font-family: "Arial", sans-serif;
 }
-header{
+
+header {
     background-color: #333;
     color: #fff;
     padding: 20px 60px;
@@ -15,50 +16,52 @@ header{
     top: 0;
     z-index: 100;
 }
-.logo{
+
+.logo {
     font-size: 32px;
     font-weight: bold;
     text-transform: uppercase;
 }
-.logo a{
+
+.logo a {
     color: #fff;
     text-decoration: none;
 }
-nav{
+
+nav {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-nav ul{
+
+nav ul {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-nav ul li{
+
+nav ul li {
     margin-left: 25px;
     list-style: none;
 }
-nav ul li a{
+
+nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 19px;
     font-weight: bold;
     transition: 0.4s ease;
 }
-nav ul li a:hover{
-    color:#666;
+
+nav ul li a:hover {
+    color: #666;
 }
-.search{
+
+.search {
     position: relative;
 }
-.search input{
-    padding: 10px;
-    border: none;
-    border-radius: 20px;
-    background-color: #444;
-    color: #fff;
-}
-.search button{
+
+#search-button {
     position: absolute;
     top: 0;
     right: 0;
@@ -66,10 +69,28 @@ nav ul li a:hover{
     border: none;
     border-radius: 20px;
     background-color: #fff;
-    color:#444;
+    color: #444;
     font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
 }
-.hero{
+
+#search-button.shattered {
+    background-color: transparent;
+    color: transparent;
+    border: 1px solid #ffffff;
+    overflow: hidden;
+}
+.search input {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #444;
+    color: #fff;
+}
+
+.hero {
     background-color: darkslateblue;
     padding: 70px 60px;
     display: flex;
@@ -77,47 +98,58 @@ nav ul li a:hover{
     flex-direction: column;
     text-align: center;
 }
-.hero h1{
+
+.hero h1 {
     font-size: 48px;
     color: #fff;
 }
-.hero p{
+
+.hero p {
     font-size: 24px;
     color: #fff;
     margin-bottom: 30px;
 }
-.main-content{
+
+.main-content {
     margin-top: 20px;
     background-color: #f9f9f9;
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     width: 100%;
 }
+
 .book-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Create a 3-column grid */
-    grid-gap: 40px; /* Add spacing between grid items */
+    grid-template-columns: repeat(3, 1fr);
+    /* Create a 3-column grid */
+    grid-gap: 40px;
+    /* Add spacing between grid items */
     margin-top: 40px;
-  }
-  .book{
+}
+
+.book {
     width: 30% !important;
     background-color: white;
 }
-.book img{
+
+.book img {
     max-width: 100%;
     height: 500px;
     margin-bottom: 10px;
 }
-.book h3{
+
+.book h3 {
     font-size: 24px;
     margin-top: 0px;
 }
-.book p{
+
+.book p {
     margin-top: 5px;
     color: #666;
 }
-.btn{
+
+.btn {
     display: inline-block;
     padding: 12px 30px;
     background-color: #333;
@@ -126,9 +158,11 @@ nav ul li a:hover{
     border-radius: 5px;
     transition: 0.4s ease;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: #555;
 }
+
 .genres {
     margin-top: 30px;
     margin-bottom: 40px;
@@ -159,48 +193,56 @@ nav ul li a:hover{
     color: #666;
 }
 
-footer{
+footer {
     background-color: #262626;
     color: #fff;
     padding: 20px;
     text-align: center;
 }
 
-.Supportsystem h4{
-color: #fff;
+.Supportsystem h4 {
+    color: #fff;
 }
-.Supportsystem form{
-color: #fff;
+
+.Supportsystem form {
+    color: #fff;
 }
-.Supportsystem button{
-border: none;
+
+.Supportsystem button {
+    border: none;
     border-radius: 20px;
     background-color: #fff;
-    color:#444;
+    color: #444;
     font-weight: bold;
 }
-.Supportsystem input{
-background-color: #666;
-color: #fff;
+
+.Supportsystem input {
+    background-color: #666;
+    color: #fff;
 }
+
 .navbar-nav .nav-item .nav-link {
-    color:white;
+    color: white;
 }
+
 .w-100 {
     width: 50% !important;
     height: 85vh;
 }
-.btnCarousel{
+
+.btnCarousel {
     background-color: darkslateblue;
 }
-#liveAlertBtn{
+
+#liveAlertBtn {
     margin-top: 20px;
-  }
+}
+
 #liveAlertPlaceholder {
     margin: 20px 0;
-  }
+}
 
-  /* Animated Countdown Timer*/
+/* Animated Countdown Timer*/
 #countdown-container {
     text-align: center;
     font-family: Arial, sans-serif;
@@ -213,9 +255,17 @@ color: #fff;
 }
 
 @keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 #duration-input label,
