@@ -42,3 +42,36 @@ h4{
 .fa-refresh:hover{
     cursor: pointer;
 }
+
+.search {
+    position: relative;
+}
+
+#search-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #444;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#search-button.shattered {
+    background-color: transparent;
+    color: transparent;
+    border: 1px solid #ffffff;
+    overflow: hidden;
+}
+.search input {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #444;
+    color: #fff;
+}
