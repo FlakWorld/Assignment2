@@ -1,22 +1,26 @@
-*{
-    margin:0px;
-    padding:0px;
+* {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     font-family: "Arial", sans-serif;
 }
+
 body {
     background-image: url(image/backgimg.png);
     background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: darken;
 }
+
 h2 {
     color: rgb(255, 255, 255);
 }
+
 p {
     font-size: 20px;
     color: rgb(255, 255, 255);
 }
-header{
+
+header {
     background-color: #333;
     color: #fff;
     padding: 20px 60px;
@@ -27,50 +31,52 @@ header{
     top: 0;
     z-index: 100;
 }
-.logo{
+
+.logo {
     font-size: 32px;
     font-weight: bold;
     text-transform: uppercase;
 }
-.logo a{
+
+.logo a {
     color: #fff;
     text-decoration: none;
 }
-nav{
+
+nav {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-nav ul{
+
+nav ul {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-nav ul li{
+
+nav ul li {
     margin-left: 25px;
     list-style: none;
 }
-nav ul li a{
+
+nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 19px;
     font-weight: bold;
     transition: 0.4s ease;
 }
-nav ul li a:hover{
-    color:#666;
+
+nav ul li a:hover {
+    color: #666;
 }
-.search{
+
+.search {
     position: relative;
 }
-.search input{
-    padding: 10px;
-    border: none;
-    border-radius: 20px;
-    background-color: #444;
-    color: #fff;
-}
-.search button{
+
+#search-button {
     position: absolute;
     top: 0;
     right: 0;
@@ -78,11 +84,30 @@ nav ul li a:hover{
     border: none;
     border-radius: 20px;
     background-color: #fff;
-    color:#444;
+    color: #444;
     font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
 }
+
+#search-button.shattered {
+    background-color: transparent;
+    color: transparent;
+    border: 1px solid #ffffff;
+    overflow: hidden;
+}
+
+.search input {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #444;
+    color: #fff;
+}
+
 .navbar-nav .nav-item .nav-link {
-    color:white;
+    color: white;
 }
 
 .tab-buttons {
@@ -108,10 +133,30 @@ nav ul li a:hover{
     transition: 0.4s ease;
 }
 
-footer{
+footer {
     background-color: #262626;
     color: #fff;
     padding: 20px;
     text-align: center;
     margin-top: 110px;
+}
+
+.tab-content {
+    text-align: center;
+}
+
+.card-text {
+    color: #262626;
+}
+
+.container-row {
+    display: inline-block;
+    width: 18rem;
+    /* Ширина карточки */
+    margin: 30px;
+    /* Опциональные отступы между карточками */
+}
+
+.card-img-hidden {
+    display: none;
 }
